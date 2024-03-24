@@ -1,0 +1,48 @@
+.bi-star{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px; 
+    color: #000000;
+}
+  
+.bi-star.filled {
+    color: gold; 
+}
+
+.bi-star.favorite-icon{
+    color: gold;
+}
+
+.favorites-title{
+    margin-bottom: 1rem;
+    color: #ffffff; 
+    text-align: center; 
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.home-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+  
+.home-content{  
+    flex: 1; 
+}
+
+.card{
+    transition: transform 0.2s;
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+}
+    
+.card:hover{
+    transform: scale(1.03);
+    z-index: 1;
+}
+  
+  

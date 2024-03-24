@@ -1,8 +1,28 @@
 .navbar-brand{
-    color: #0072BB;
+    color: #ffffff;
     font-weight: bold;
 }
 
 .nav-item .nav-link{
-    color: #0072BB;
+    color: #ffffff; 
+}
+
+.navbar.navbar-expand-lg {
+    background-color: #0072BB !important;
+}
+
+.navbar{
+    box-shadow: 10px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.form-control + .btn{ 
+    background-color: #178120; 
+    color: #ffffff; 
+    border-color: #37b942; 
+}
+  
+  .form-control + .btn:hover{
+    background-color: #106317;
+    color: #ffffff;
+    border-color: #178120;
 }

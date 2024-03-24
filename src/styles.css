@@ -1,12 +1,19 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
-@import "~bootstrap-icons/font/bootstrap-icons.css";
-
 *{
     margin: 0;
     padding: 0;
 }
 
-body{
-    font-family: "Ubuntu", sans-serif;
-    background-color: #0072BB;
+body {
+    font-family: 'Ubuntu', 'sans-serif';
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRvo4GvbxSX5UzVjWqPt9OsEMKdDX2SEmUQq3nBw4E5Q&s');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+  }
+
+html, body{
+    height: 100%;
+    margin: 0;
 }
+  

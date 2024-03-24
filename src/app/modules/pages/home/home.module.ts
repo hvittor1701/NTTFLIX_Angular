@@ -1,21 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { CarouselModule } from './components/carousel/carousel.module'; 
 import { HomeComponent } from './home.component';
-import { BrowserModule } from '@angular/platform-browser';
 import { CoreModule } from 'src/app/core/core.module';
 
 @NgModule({
-  declarations: [
-    HomeComponent,
-  ],
-  imports: [
-    CommonModule,
-    BrowserModule,
-    CoreModule
-  ],
-  exports: [
-    HomeComponent
-  ]
+  declarations: [HomeComponent],
+  imports: [CommonModule, CarouselModule, CoreModule], 
 })
 export class HomeModule { }
-

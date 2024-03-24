@@ -1,0 +1,41 @@
+<div class="home-container">
+    <app-header></app-header>
+    <main class="home-content">
+        <div class="movie-details-container">
+            <div class="movie-poster">
+              <img [src]="movieDetails.Poster" alt="Movie Poster" onerror="this.onerror=null;this.src='https://via.placeholder.com/300x450?text=No+Image';">
+            </div>
+            <div class="movie-info">
+                <h1>{{ movieDetails.Title }}</h1>
+                <p><strong>Year:</strong> {{ movieDetails.Year }}</p>
+                <p class="rating"><strong>Ratings:</strong> {{ movieDetails.Rated }}</p>
+                <p class="release-date"><strong>Released:</strong> {{ movieDetails.Released }}</p>
+                <div class="genre-box">
+                    <p class="genre"><strong>Genre:</strong> {{ movieDetails.Genre }}</p>
+                </div>
+                <p><strong>Director:</strong> {{ movieDetails.Director }}</p>
+                <p><strong>Writer:</strong> {{ movieDetails.Writer }}</p>
+                <p><strong>Actors:</strong> {{ movieDetails.Actors }}</p>
+                <p><strong>Plot:</strong> {{ movieDetails.Plot }}</p>
+                <p class="language"><strong>Language:</strong> {{ movieDetails.Language }}</p>
+                <p class="awards">
+                    <i class="bi bi-trophy-fill"></i> 
+                    {{ movieDetails.Awards }}
+                </p>
+                <div *ngIf="movieDetails.Ratings">
+                    <div *ngFor="let rating of movieDetails.Ratings">
+                      <span class="rating-badge">{{ rating.Source }}: {{ rating.Value }}</span>
+                    </div>
+                </div>
+            </div>
+            <i class="bi bi-star" [ngClass]="{'filled': isFavorite()}" (click)="toggleFavorite()"></i>
+        </div>
+    </main>
+    <app-footer></app-footer>
+</div>
+
+  
+  
+
+  
+  

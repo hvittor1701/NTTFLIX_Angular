@@ -1,0 +1,27 @@
+<div class="home-container">
+  <app-header></app-header>
+  <main class="home-content">
+    <div class="container mt-3">
+      <div *ngIf="movies.length > 0; else noMoviesTemplate" class="row">
+        <ng-container *ngFor="let movie of movies">
+          <div class="col-md-4 mb-3">
+            <div class="card h-100" [routerLink]="['/movie-details', movie.imdbID]">
+              <img [src]="movie.Poster" class="card-img-top" alt="Movie Poster" onerror="this.onerror=null;this.src='https://via.placeholder.com/300x450?text=No+Image';">
+              <div class="card-body">
+                <h5 class="card-title">{{ movie.Title }}</h5>
+                <p class="card-text">Year: {{ movie.Year }}</p>
+                <i class="bi bi-star" [ngClass]="{'filled': isFavorite(movie.imdbID)}" (click)="toggleFavorite(movie.imdbID, $event)"></i>
+              </div>
+            </div>
+          </div>
+        </ng-container>
+      </div>
+      <ng-template #noMoviesTemplate>
+        <div class="no-movies-message">
+          No movies found
+        </div>
+      </ng-template>
+    </div>
+  </main>
+  <app-footer></app-footer>
+</div>

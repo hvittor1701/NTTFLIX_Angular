@@ -1,0 +1,23 @@
+#carouselExampleCaptions{
+  background-image: url('https://www.veeforu.com/wp-content/uploads/2023/07/Futuristic-Gaming-Blue-Abstract-Design-with-Virtual-Screens-and-AI-Interface-1024x576.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  padding: 0;
+}
+
+.carousel-img{
+  max-height: 500px;
+  width: auto;
+  object-fit: contain;
+}
+
+.carousel-caption h5, .carousel-caption p{
+  color: #ffffff;
+  text-shadow: 
+    -1px -1px 0 #0072BB,  
+    1px -1px 0 #0072BB,
+    -1px 1px 0 #0072BB,
+    1px 1px 0 #0072BB;
+}
